@@ -7,9 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Simple Flags/camdaloon
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,5 +22,5 @@ jobs:
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
-          name: Simple-Flags-v1.0.0-2_beta
-          path: Simple Flags/camdaloon/build/libs/*.jar
+          name: Simple-Flags-v1.0.0-3_beta
+          path: build/libs/*.jar
