@@ -1,0 +1,7 @@
+version: 1
+canvas:
+  width: 64
+  height: 96
+painting:
+  default-pen-size: 1
+  max-pen-size: 8
