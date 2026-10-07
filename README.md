@@ -4,37 +4,24 @@ Simple Flags is a Paper plugin by camdaloon for creating, painting, copying, and
 
 ## Current Version
 
-v1.0.0-3_beta
+v1.0.0-4_beta
 
 ## Features
 
 - Custom craftable flags
 - Creator and player-assigned flag names
 - Unique flag identities
-- Flag copying with a blank flag
-- High-resolution canvas editor foundation
+- Blank flag copying
+- Inventory canvas editor
 - Multiple pen sizes
-- Custom color picker foundation
-- Image import from a direct URL foundation
-- Persistent flag artwork
-- Paper API based architecture
+- Color picker
+- Image import from a direct URL
+- Upload permission control
+- Persistent artwork
 
-## Crafting
+## Upload Permission
 
-```text
-Stick  White Wool  White Wool
-Stick  White Wool  White Wool
-```
-
-## Flag Copying
-
-Place a designed flag and a blank flag together in the crafting grid to create a new copy with the same artwork and creator information.
-
-## Image Import
-
-The editor can support importing an image from a direct URL. The server must be able to reach the URL.
-
-A normal server-only Paper plugin cannot open a player's computer file picker because the Minecraft client does not expose the player's local filesystem to the server.
+The upload button requires `uploadflag`. Players without the permission see `Insufficient permissions` when hovering over the button and are blocked from using it.
 
 ## Building
 

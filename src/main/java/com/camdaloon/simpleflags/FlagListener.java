@@ -21,6 +21,6 @@ public final class FlagListener implements Listener {
         ItemStack item = event.getItem();
         if (!service.isFlag(item)) return;
         event.setCancelled(true);
-        new FlagEditor(plugin, service).open(event.getPlayer(), item);
+        new FlagEditor(plugin, service, item, event.getPlayer()).open(event.getPlayer());
     }
 }

@@ -7,6 +7,10 @@ description: Adds in simple flags to Minecraft.
 commands:
   simpleflags:
     description: Simple Flags command
-    usage: /simpleflags reload
+    usage: /simpleflags <reload|name|upload>
     aliases:
       - sf
+permissions:
+  uploadflag:
+    description: Allows use of the flag image upload feature
+    default: op
