@@ -4,7 +4,7 @@ Simple Flags is a Paper plugin by camdaloon for crafting, painting, naming, copy
 
 ## Version
 
-v1.0.0-5_beta
+v1.0.0-6_beta
 
 ## Features
 
@@ -36,3 +36,8 @@ The companion resource pack contains the supplied editor, name-bar, Save, and Ca
 ## Build
 
 Use the included GitHub Actions workflow or run `gradle build`.
+
+
+## Custom GUI resources
+
+The companion resource pack is named `Simple-Flags-RP-v1.0.0-6_beta.zip`. It contains the supplied Flag Painter artwork. Paper inventory APIs cannot render a standalone PNG as an interactive inventory background or provide free mouse-drag drawing; this release keeps the canvas slot-based while the custom GUI rendering is being developed.
