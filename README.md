@@ -1,43 +1,29 @@
 # Simple Flags
 
-Simple Flags is a Paper plugin by camdaloon for crafting, painting, naming, copying, and importing custom flags.
+**Version:** 1.0.0-8_beta  
+**Author:** camdaloon
 
-## Version
+Adds in simple flags to Minecraft.
 
-v1.0.0-7_beta
+## Requirements
+
+- Paper 1.21.11 or newer with the native Java Edition dialog API
+- Java 21
 
 ## Features
 
-- Custom flag crafting recipe
-- Flag creator, name, and unique item identity
-- Designed flag copying with a blank flag
-- Inventory canvas with pen-size, shape, and fill tool selection
-- Color picker
-- Flag naming prompt
-- Image import from a direct URL, restricted by `uploadflag`
-- GUI click and drag protection to prevent taking editor controls
-- Included resource-pack texture assets based on the supplied PNG mockups
+- Craft a blank flag with two sticks in the first column and four white wool in the other two columns (`SWW` / `SWW`).
+- Right-click a Simple Flag to open Minecraft's native custom dialog screen, not an inventory.
+- View a colored 9 × 5 preview of the saved flag design.
+- Paint a selected canvas pixel by X/Y coordinates and a hexadecimal color.
+- Fill the canvas with a chosen color.
+- Rename and save the design to the flag.
+- Cancel to discard edits.
 
-## Crafting
+## Important editor limitations
 
-```text
-Stick  White Wool  White Wool
-Stick  White Wool  White Wool
-```
-
-## Upload permission
-
-The `uploadflag` permission defaults to operators. Players without it see `Insufficient permissions` in the upload button tooltip and cannot use the upload action.
-
-## Resource pack
-
-The companion resource pack contains the supplied editor, name-bar, Save, and Cancel PNG assets. It is a texture asset pack; the plugin's current editor is still implemented as an inventory GUI, so the PNGs are not yet a full replacement for Minecraft's inventory screen.
+Minecraft's native dialog screens do not support freehand mouse drawing or arbitrary custom PNG backgrounds/buttons. This version uses the native dialog widgets and colored text to show the canvas; it does not reproduce the supplied mockup pixel-for-pixel. A resource pack is not included because this implementation does not require one. Freehand drawing and a fully texture-based canvas would require a different client-side UI approach.
 
 ## Build
 
-Use the included GitHub Actions workflow or run `gradle build`.
-
-
-## GUI status
-
-The resource pack includes the supplied Flag Painter artwork as reference textures. This beta still uses an inventory-based editor; the artwork is not yet rendered as the live GUI background. A standalone Paper plugin cannot replace the client screen renderer or receive free mouse coordinates, so this release does not claim a pixel-perfect custom screen.
+The GitHub Actions workflow builds the plugin JAR using Java 21 and Gradle. Download the `SimpleFlags` JAR from the workflow artifact and place it in the server's `plugins` folder.

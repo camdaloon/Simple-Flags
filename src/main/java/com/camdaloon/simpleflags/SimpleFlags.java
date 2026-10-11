@@ -23,7 +23,6 @@ public final class SimpleFlags extends JavaPlugin {
         FlagService service = new FlagService(this);
         getServer().getPluginManager().registerEvents(new FlagListener(this, service), this);
         getServer().getPluginManager().registerEvents(new FlagCraftListener(service), this);
-        getServer().getPluginManager().registerEvents(new UploadListener(this, service), this);
         getCommand("simpleflags").setExecutor(new SimpleFlagsCommand(this, service));
         getCommand("simpleflags").setTabCompleter(new SimpleFlagsCommand(this, service));
         registerRecipe();

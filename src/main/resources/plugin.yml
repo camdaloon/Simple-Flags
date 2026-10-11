@@ -1,7 +1,7 @@
 name: SimpleFlags
 version: ${pluginVersion}
 main: com.camdaloon.simpleflags.SimpleFlags
-api-version: '1.21'
+api-version: '1.21.6'
 author: camdaloon
 description: Adds in simple flags to Minecraft.
 commands:
