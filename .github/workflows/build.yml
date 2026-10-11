@@ -22,5 +22,5 @@ jobs:
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
-          name: Simple-Flags-v1.0.0-6_beta
+          name: Simple-Flags-v1.0.0-7_beta
           path: build/libs/*.jar

@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.camdaloon'
-version = '1.0.0-6_beta'
+version = '1.0.0-7_beta'
 
 repositories {
     maven { url = 'https://repo.papermc.io/repository/maven-public/' }
