@@ -113,7 +113,7 @@ public final class NativeFlagEditor {
                         if (audience instanceof Player target) target.closeDialog();
                     }, ClickCallback.Options.builder().uses(1).build()))
                     .build()
-            )).build());
+            ))).build());
     }
 
     private Component renderCanvas() {
